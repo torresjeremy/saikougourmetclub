@@ -41,6 +41,8 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    'no-use-before-define': ['error', { variables: false }],
+    'no-unused-vars': 'off',
   },
   settings: {
     'import/extensions': [
