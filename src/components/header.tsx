@@ -1,9 +1,11 @@
 import React from 'react';
 import Logo from 'images/Logo.png';
 import {
-  Flex, Link, Center, Spacer, Image, Box, Menu, MenuButton, IconButton, MenuList, MenuItem,
+  Flex, Center, Spacer, Image, Menu, MenuButton, IconButton, MenuList, MenuItem,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => (
   <Flex width="100%" height="130px" bg="yellow.150">
@@ -18,12 +20,15 @@ const Header: React.FC = () => (
           display: 'none',
         },
       }}
+      fontWeight="bold"
     >
-      <Center p="5"><Link to="/test" fontWeight="bold">Home</Link></Center>
-      <Center p="5"><Link to="/test" fontWeight="bold">About</Link></Center>
-      <Center p="5"><Link to="/test" fontWeight="bold">Menu</Link></Center>
-      <Center p="5"><Link to="/test" fontWeight="bold">Roadmap</Link></Center>
-      <Center p="5"><Link to="/test" fontWeight="bold">Contact</Link></Center>
+      <Center p="5" fontWeight="bold"><Link to="/">Home</Link></Center>
+      <Center p="5"><Link to="/about">About</Link></Center>
+      <Center p="5"><Link to="/test">Menu</Link></Center>
+      <Center p="5"><Link to="/test">Roadmap</Link></Center>
+      <Center p="5"><Link to="/test">Contact</Link></Center>
+      <Center p="5" pr="0"><Link to="/test"><FaTwitter size={20} /></Link></Center>
+      <Center p="5"><Link to="/test"><FaDiscord size={20} /></Link></Center>
     </Flex>
     <Flex
       display="none"
@@ -46,21 +51,27 @@ const Header: React.FC = () => (
             mt="2"
           />
         </Center>
-        <MenuList>
+        <MenuList bg="yellow.150" borderColor="black">
           <MenuItem>
-            <Link to="/test" fontWeight="bold">Home</Link>
+            <Link to="/">Home</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/test" fontWeight="bold">About</Link>
+            <Link to="/about">About</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/test" fontWeight="bold">Menu</Link>
+            <Link to="/test">Menu</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/test" fontWeight="bold">Roadmap</Link>
+            <Link to="/test">Roadmap</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/test" fontWeight="bold">Contact</Link>
+            <Link to="/test">Contact</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/test"><FaTwitter size={20} /></Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/test"><FaDiscord size={20} /></Link>
           </MenuItem>
         </MenuList>
       </Menu>

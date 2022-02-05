@@ -3,6 +3,7 @@ import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { Routes, Route } from 'react-router-dom';
 import Home from 'pages/home';
+import About from 'pages/about';
 import Header from 'components/header';
 import theme from 'components/theme';
 // import Fonts from 'components/fonts';
@@ -16,6 +17,7 @@ const App: React.FC = () => (
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </ChakraProvider>
