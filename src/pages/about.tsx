@@ -44,15 +44,15 @@ const About: React.FC = () => {
                 WHO IS SAIKOU GOURMET CLUB?
               </Text>
               <Slider {...settings}>
-                <Image src={NFT_IMAGES.NFT1} maxWidth="400px" p="2" />
-                <Image src={NFT_IMAGES.NFT2} maxWidth="400px" p="2" />
-                <Image src={NFT_IMAGES.NFT3} maxWidth="400px" p="2" />
-                <Image src={NFT_IMAGES.NFT4} maxWidth="400px" p="2" />
-                <Image src={NFT_IMAGES.NFT5} maxWidth="400px" p="2" />
-                <Image src={NFT_IMAGES.NFT6} maxWidth="400px" p="2" />
+                <Image src={NFT_IMAGES.NFT1} maxWidth={{ base: '250px', md: '400px' }} p="2" />
+                <Image src={NFT_IMAGES.NFT2} maxWidth={{ base: '250px', md: '400px' }} p="2" />
+                <Image src={NFT_IMAGES.NFT3} maxWidth={{ base: '250px', md: '400px' }} p="2" />
+                <Image src={NFT_IMAGES.NFT4} maxWidth={{ base: '250px', md: '400px' }} p="2" />
+                <Image src={NFT_IMAGES.NFT5} maxWidth={{ base: '250px', md: '400px' }} p="2" />
+                <Image src={NFT_IMAGES.NFT6} maxWidth={{ base: '250px', md: '400px' }} p="2" />
               </Slider>
               <Center>
-                <Text textAlign="center" color="white" fontWeight="400" pt="5" width={{ base: '100%', md: '60%' }} pl={{ base: '30%', md: '0' }} pr={{ base: '30%', md: '0' }}>
+                <Text textAlign="center" color="white" fontWeight="400" pt="5" width={{ base: 'auto', md: '60%' }} px={{ base: '30px', md: '0' }}>
                   A collection of 3,333 uniquely hand-drawn and manually mixed CNFT PFP on the Cardano
                   blockchain. Featuring the ultimate universal language - food.
                   A series of dishes will be launched in order to build a community-driven platform for collectors.

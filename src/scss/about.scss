@@ -1,4 +1,16 @@
 .slick-slider {
   width: 1150px !important;
   margin: auto;
+
+  @media only screen and (max-width: 767px) {
+    & {
+      width: 500px !important;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    & {
+      width: 350px !important;
+    }
+  }
 }
