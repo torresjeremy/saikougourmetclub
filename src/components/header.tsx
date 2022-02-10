@@ -26,7 +26,7 @@ const Header: React.FC = () => (
       <Center p="5"><Link to="/about">About</Link></Center>
       <Center p="5"><Link to="/menu">Menu</Link></Center>
       <Center p="5"><Link to="/roadmap">Roadmap</Link></Center>
-      <Center p="5"><Link to="/test">Contact</Link></Center>
+      <Center p="5"><Link to="/contact">Contact</Link></Center>
       <Center p="5" pr="0"><Link to="/test"><FaTwitter size={20} /></Link></Center>
       <Center p="5"><Link to="/test"><FaDiscord size={20} /></Link></Center>
     </Flex>

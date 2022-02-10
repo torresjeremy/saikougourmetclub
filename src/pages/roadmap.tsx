@@ -14,9 +14,9 @@ const Roadmap: React.FC = () => (
         backgroundSize="cover"
         backgroundRepeat="no-repeat"
         w="100%"
-        height={{ base: '500px', md: 'auto' }}
+        height={{ base: '500px', md: '450px' }}
       >
-        <Center height={{ base: '500px', md: '400px' }}>
+        <Center height={{ base: '500px', md: '450px' }}>
           <Flex direction="column">
             <Center><Image src={HeaderNaruto} boxSize="70px" /></Center>
             <Text fontFamily="CFSamuraiBob" fontSize="50px" fontWeight="400" color="white" mt="-10px">ROADMAP</Text>

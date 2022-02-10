@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from 'pages/home';
 import About from 'pages/about';
 import Roadmap from 'pages/roadmap';
+import Contact from 'pages/contact';
 import Header from 'components/header';
 import theme from 'components/theme';
 // import Fonts from 'components/fonts';
@@ -21,6 +22,7 @@ const App: React.FC = () => (
         <Route path="/about" element={<About />} />
         <Route path="/menu" element="" />
         <Route path="/roadmap" element={<Roadmap />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </ChakraProvider>
