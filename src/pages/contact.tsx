@@ -12,14 +12,17 @@ const Contact: React.FC = () => {
   const recaptchaRef = useRef(null);
   const formRef = useRef(null);
   const [successMessageDisplay, setSuccessMessageDisplay] = useState<boolean>(false);
+  const [recaptchaResp, setRecaptchaResp] = useState(null);
 
   const dismissTimeout = () => {
-    setTimeout(() => setSuccessMessageDisplay(false), 3000);
+    setTimeout(() => {
+      setSuccessMessageDisplay(false);
+      window.location.reload();
+    }, 3000);
   };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    recaptchaRef.current.execute();
 
     emailjs.sendForm('service_c5mav1f', 'template_nb1ikuc', formRef.current, 'user_qmU8FjIYDD2LecWzyelZI')
       .then((result) => {
@@ -27,11 +30,13 @@ const Contact: React.FC = () => {
         setSuccessMessageDisplay(true);
         dismissTimeout();
         formRef.current.reset();
+        setRecaptchaResp(null);
       }, (error) => {
         console.error(error.text);
         setSuccessMessageDisplay(true);
         dismissTimeout();
         formRef.current.reset();
+        setRecaptchaResp(null);
       });
   };
 
@@ -67,24 +72,23 @@ const Contact: React.FC = () => {
                   <FormLabel htmlFor="email">Email</FormLabel>
                   <Input name="email" type="email" id="email" borderColor="black" focusBorderColor="black" height="60px" variant="outline" borderRadius="0" bgColor="white" />
                 </FormControl>
-                <FormControl isRequired>
+                <FormControl isRequired pb="20px">
                   <FormLabel htmlFor="message">Comment or Message</FormLabel>
                   <Textarea maxLength={200} name="message" id="message" borderColor="black" focusBorderColor="black" height="100px" variant="outline" borderRadius="0" bgColor="white" />
                 </FormControl>
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6LfBimoeAAAAAHgd9hFxaxlBwNY-eHjU2vKtSNju"
+                  onChange={(value: string | null) => setRecaptchaResp(value)}
+                />
                 <Box w="100%" pt="40px">
-                  <Button type="submit" bgColor="red.150" size="lg" color="white">Submit</Button>
+                  <Button disabled={!recaptchaResp} type="submit" bgColor="red.150" size="lg" color="white">Submit</Button>
                 </Box>
               </form>
             </VStack>
           </Container>
         </Box>
       </VStack>
-      <ReCAPTCHA
-        ref={recaptchaRef}
-        size="invisible"
-        sitekey="6LfBimoeAAAAAHgd9hFxaxlBwNY-eHjU2vKtSNju"
-        onChange={(value: string | null) => console.log(value)}
-      />
     </Flex>
   );
 };
