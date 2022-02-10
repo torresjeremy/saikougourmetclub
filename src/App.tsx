@@ -4,6 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { Routes, Route } from 'react-router-dom';
 import Home from 'pages/home';
 import About from 'pages/about';
+import Menu from 'pages/menu';
 import Roadmap from 'pages/roadmap';
 import Contact from 'pages/contact';
 import Header from 'components/header';
@@ -20,7 +21,7 @@ const App: React.FC = () => (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/menu" element="" />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

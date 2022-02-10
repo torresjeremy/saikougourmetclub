@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import {
-  Flex, Center, Text, VStack, Box, Image, SimpleGrid, Heading, Container,
+  Flex, Center, Text, VStack, Box, Image, Heading, Container,
 } from '@chakra-ui/react';
 import HeaderNaruto from 'images/roadmap/header_naruto.png';
 import HeaderRoadmap from 'images/roadmap/header_roadmap.png';
@@ -20,13 +20,13 @@ const Roadmap: React.FC = () => (
           <Flex direction="column">
             <Center><Image src={HeaderNaruto} boxSize="70px" /></Center>
             <Text fontFamily="CFSamuraiBob" fontSize="50px" fontWeight="400" color="white" mt="-10px">ROADMAP</Text>
-            <Text color="white" fontFamily="ProximaNova" fontWeight="400" pt="10px" fontSize="18px">Fresh dishes, giveaways, and events coming right up on 2022!</Text>
+            <Text color="white" fontWeight="400" pt="10px" fontSize="18px">Fresh dishes, giveaways, and events coming right up on 2022!</Text>
           </Flex>
         </Center>
       </Box>
       <Container pt="80px" pb="30px" maxW="8xl" px="12%">
         <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Q1 2022</Heading>
-        <Container fontFamily="ProximaNova" fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
+        <Container fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
           <Text pt="10px" pb="10px">Website Launching</Text>
           <Text pt="10px" pb="10px">Social Media Presence</Text>
           <Text pt="10px" pb="10px">Live Launching of “The First Dish” </Text>
@@ -37,7 +37,7 @@ const Roadmap: React.FC = () => (
       </Container>
       <Container pt="30px" pb="30px" maxW="8xl" px="12%">
         <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Q2 2022</Heading>
-        <Container fontFamily="ProximaNova" fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
+        <Container fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
           <Text pt="10px">Community Art Competition</Text>
           <Text fontWeight="400" pl="50px" pb="10px">Winner will receive an exclusive NFT and become the banner on Discord. Top 10 will be posted on social media.</Text>
           <Text pt="10px">Chef Guesting V1</Text>
@@ -48,7 +48,7 @@ const Roadmap: React.FC = () => (
       </Container>
       <Container pt="30px" pb="80px" maxW="8xl" px="12%">
         <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Q3 2022</Heading>
-        <Container fontFamily="ProximaNova" fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
+        <Container fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
           <Text pt="10px">Launching of “The Second Dish” </Text>
           <Text fontWeight="400" pl="50px" pb="10px">Winner will receive an exclusive NFT and become the banner on Discord. Top 10 will be posted on social media.</Text>
           <Text pt="10px">”The First Dish” in the style of our guest chef. Artist to be determined by the team.</Text>

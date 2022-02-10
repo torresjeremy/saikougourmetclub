@@ -3,7 +3,7 @@ import HeaderBG from 'images/home_header.png';
 import MainNFT from 'images/home_nft_showcase.gif';
 import Greetings from 'images/greetings.png';
 import {
-  Image, Flex, Center, SimpleGrid, Text, VStack, Button, Box,
+  Image, Flex, Center, SimpleGrid, Text, VStack, Button, Box, Container,
 } from '@chakra-ui/react';
 import NFT_IMAGES from 'utils/nft_image_imports';
 
@@ -18,17 +18,19 @@ const Home: React.FC = () => (
         h={{ base: '600px', md: 'auto' }}
       >
         <SimpleGrid columns={{ sm: 1, md: 1, lg: 2 }} height={{ base: '600px', md: '700px' }}>
-          <Center pt={{ base: '40px', md: 'auto' }}>
-            <VStack spacing="5">
-              <Image src={Greetings} maxWidth={{ base: '250px', md: '350px', lg: '450px' }} style={{ transform: 'rotate(-1.15deg)' }} />
-              <Text width="420px" textAlign="left" color="white" fontWeight="500" fontSize="xl">
-                Saikou Gourmet Club is a collection of 3,333 uniquely hand-drawn,
-                manually mixed and matched CNFT
-                PFP on the Cardano blockchain.
-                It features the ultimate universal language - food.
-              </Text>
-            </VStack>
-          </Center>
+          <Container maxW="5xl">
+            <Center pt={{ base: '40px', md: 'auto' }} height="100%" pb="30px">
+              <VStack spacing="8">
+                <Image src={Greetings} maxWidth={{ base: '250px', md: '350px', lg: '450px' }} style={{ transform: 'rotate(-1.15deg)' }} />
+                <Text px={{ base: '30px', md: '0px' }} width={{ base: 'auto', lg: '430px' }} textAlign="left" color="white" fontWeight="500" fontSize={{ base: '14px', md: '16px', lg: '20px' }}>
+                  Saikou Gourmet Club is a collection of 3,333 uniquely hand-drawn,
+                  manually mixed and matched CNFT
+                  PFP on the Cardano blockchain.
+                  It features the ultimate universal language - food.
+                </Text>
+              </VStack>
+            </Center>
+          </Container>
           <Center pb={{ base: '40px', md: 'auto' }}><Image src={MainNFT} width={{ base: '250px', md: '350px', lg: '450px' }} /></Center>
         </SimpleGrid>
       </Box>

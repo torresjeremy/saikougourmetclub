@@ -134,7 +134,7 @@ const About: React.FC = () => {
           </VStack>
           <VStack spacing="5">
             <Image src={NFT_IMAGES.NFT3} maxWidth="250px" />
-            <Text fontWeight="bold" fontSize="3xl">Dana</Text>
+            <Text fontWeight="bold" fontSize="3xl">Dave</Text>
             <Text fontWeight="500" fontSize="lg">
               Assistant Artist
               <br />

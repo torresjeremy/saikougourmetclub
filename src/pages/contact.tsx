@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
 import React, { useRef, useState } from 'react';
 import {
-  Flex, Center, Text, VStack, Box, Textarea, Heading, Container, Input, Button, SimpleGrid,
-  FormLabel, FormControl, Alert, AlertTitle, CloseButton, AlertIcon,
+  Flex, VStack, Box, Textarea, Heading, Container, Input, Button, SimpleGrid,
+  FormLabel, FormControl, Alert, AlertTitle, CloseButton,
 } from '@chakra-ui/react';
 import HeaderContact from 'images/contact/header_contact.png';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
               <CloseButton position="absolute" right="8px" top="8px" onClick={() => setSuccessMessageDisplay(false)} />
             </Alert>
             <Heading pb="20px" fontFamily="CFSamuraiBob" color="red.150" fontSize="55px" fontWeight="400">GET IN TOUCH</Heading>
-            <VStack fontFamily="ProximaNova" fontWeight="500">
+            <VStack fontWeight="500">
               <form ref={formRef} onSubmit={(e) => sendEmail(e)} style={{ width: '100%' }}>
                 <SimpleGrid columns={{ sm: 1, md: 2 }} w="100%" spacing="20px" pb="20px">
                   <FormControl isRequired>

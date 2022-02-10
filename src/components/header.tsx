@@ -5,7 +5,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { FaDiscord, FaTwitter } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header: React.FC = () => (
   <Flex width="100%" height="130px" bg="yellow.150">
@@ -22,11 +22,11 @@ const Header: React.FC = () => (
       }}
       fontWeight="bold"
     >
-      <Center p="5" fontWeight="bold"><Link to="/">Home</Link></Center>
-      <Center p="5"><Link to="/about">About</Link></Center>
-      <Center p="5"><Link to="/menu">Menu</Link></Center>
-      <Center p="5"><Link to="/roadmap">Roadmap</Link></Center>
-      <Center p="5"><Link to="/contact">Contact</Link></Center>
+      <Center p="5" fontWeight="bold"><NavLink to="/" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Home</NavLink></Center>
+      <Center p="5"><NavLink to="/about" className={({ isActive }) => (isActive ? 'activeLink' : '')}>About</NavLink></Center>
+      <Center p="5"><NavLink to="/menu" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Menu</NavLink></Center>
+      <Center p="5"><NavLink to="/roadmap" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Roadmap</NavLink></Center>
+      <Center p="5"><NavLink to="/contact" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Contact</NavLink></Center>
       <Center p="5" pr="0"><Link to="/test"><FaTwitter size={20} /></Link></Center>
       <Center p="5"><Link to="/test"><FaDiscord size={20} /></Link></Center>
     </Flex>
@@ -65,7 +65,7 @@ const Header: React.FC = () => (
             <Link to="/roadmap">Roadmap</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/test">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </MenuItem>
           <MenuItem>
             <Link to="/test"><FaTwitter size={20} /></Link>
