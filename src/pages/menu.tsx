@@ -7,7 +7,6 @@ import HeaderContact from 'images/contact/header_contact.png';
 
 const Contact: React.FC = () => {
   useEffect(() => {
-    console.log('scroll to top');
     window.scrollTo(0, 0);
   }, []);
 
