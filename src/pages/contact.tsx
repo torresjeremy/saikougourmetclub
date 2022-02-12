@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_c5mav1f', 'template_nb1ikuc', formRef.current, 'user_qmU8FjIYDD2LecWzyelZI')
+    emailjs.sendForm('service_2sfhicp', 'template_vufpgqt', formRef.current, 'user_eLYtmL9MDfgLGwowQthZx')
       .then((result) => {
         setSuccessMessageDisplay(true);
         dismissTimeout();
