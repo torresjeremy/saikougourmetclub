@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
@@ -40,9 +41,15 @@ const About: React.FC = () => {
         >
           <Center height={{ base: '750px', md: '700px' }}>
             <Flex direction="column">
-              <Text fontFamily="CFSamuraiBob" color="white" fontSize={{ base: '40px', md: '7xl' }} pb="5">
-                WHO IS SAIKOU GOURMET CLUB?
-              </Text>
+              <Center>
+                <Flex direction="row">
+                  <Center>
+                    <Box fontFamily="CFSamuraiBob" color="white" fontSize={{ base: '50px', md: '7xl' }} pb="35px" lineHeight={{ base: '35px', md: '36px' }}>
+                      WHO IS SAIKOU GOURMET CLUB <Text fontFamily="GangOfThree" display="inline" fontSize={{ base: '33px', md: '5xl' }}>?</Text>
+                    </Box>
+                  </Center>
+                </Flex>
+              </Center>
               <Slider {...settings}>
                 <Image src={NFT_IMAGES.NFT1} maxWidth={{ base: '250px', md: '400px' }} p="2" />
                 <Image src={NFT_IMAGES.NFT2} maxWidth={{ base: '250px', md: '400px' }} p="2" />
@@ -109,11 +116,11 @@ const About: React.FC = () => {
           </Center>
         </SimpleGrid>
         <Center>
-          <Heading fontFamily="CFSamuraiBob" color="red.150" fontSize="5xl" pb="70px">TEAM</Heading>
+          <Heading fontFamily="CFSamuraiBob" color="red.150" fontWeight="400" fontSize="6xl" pb="70px">TEAM</Heading>
         </Center>
-        <SimpleGrid columns={{ sm: 1, lg: 3 }} spacing="100px" pb="100px">
+        <SimpleGrid columns={{ sm: 1, lg: 3 }} spacing="100px" pb="100px" px="40px">
           <VStack spacing="5">
-            <Image src={NFT_IMAGES.NFT2} maxWidth="250px" />
+            <Image src={NFT_IMAGES.NFT2} width={{ base: '250px', md: '400px' }} />
             <Text fontWeight="bold" fontSize="3xl">Dana</Text>
             <Text fontWeight="500" fontSize="lg">
               Main Artist
@@ -122,7 +129,7 @@ const About: React.FC = () => {
             </Text>
           </VStack>
           <VStack spacing="5">
-            <Image src={NFT_IMAGES.NFT1} maxWidth="250px" />
+            <Image src={NFT_IMAGES.NFT1} width={{ base: '250px', md: '400px' }} />
             <Text fontWeight="bold" fontSize="3xl">Liam</Text>
             <Text fontWeight="500" fontSize="lg">
               Co Project Head
@@ -133,7 +140,7 @@ const About: React.FC = () => {
             </Text>
           </VStack>
           <VStack spacing="5">
-            <Image src={NFT_IMAGES.NFT3} maxWidth="250px" />
+            <Image src={NFT_IMAGES.NFT3} width={{ base: '250px', md: '400px' }} />
             <Text fontWeight="bold" fontSize="3xl">Dave</Text>
             <Text fontWeight="500" fontSize="lg">
               Assistant Artist

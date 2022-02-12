@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import {
-  Flex, Center, Text, VStack, Box, Image, SimpleGrid, Heading, Container,
+  Flex, Center, VStack, Box, Text,
 } from '@chakra-ui/react';
 import HeaderContact from 'images/contact/header_contact.png';
 
@@ -15,14 +16,14 @@ const Contact: React.FC = () => (
         height={{ base: '80vh' }}
       >
         <Center height="85%">
-          <Heading
+          <Box
             fontFamily="CFSamuraiBob"
             fontWeight="400"
             color="red.150"
             fontSize="7xl"
           >
-            Serving Real Soon!
-          </Heading>
+            Serving Real Soon <Text fontFamily="GangOfThree" display="inline" fontSize={{ base: '5xl' }}>!</Text>
+          </Box>
         </Center>
       </Box>
     </VStack>

@@ -1,7 +1,7 @@
 import React from 'react';
-import HeaderBG from 'images/home_header.png';
-import MainNFT from 'images/home_nft_showcase.gif';
-import Greetings from 'images/greetings.png';
+import HeaderBG from 'images/home/header.png';
+import MainNFT from 'images/home/nft_showcase.gif';
+import Greetings from 'images/home/greetings.png';
 import {
   Image, Flex, Center, SimpleGrid, Text, VStack, Button, Box, Container,
 } from '@chakra-ui/react';
@@ -35,10 +35,10 @@ const Home: React.FC = () => {
                 </VStack>
               </Center>
             </Container>
-            <Center pb={{ base: '40px', md: 'auto' }}><Image src={MainNFT} width={{ base: '250px', md: '350px', lg: '450px' }} /></Center>
+            <Center pb={{ base: '40px', md: '0px' }}><Image src={MainNFT} width={{ base: '250px', md: '350px', lg: '450px' }} /></Center>
           </SimpleGrid>
         </Box>
-        <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} height="auto" spacing="20" pt="20" pb="20">
+        <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} height="auto" spacing="20" pt="40">
           <Image src={NFT_IMAGES.NFT1} maxWidth="300px" />
           <Image src={NFT_IMAGES.NFT2} maxWidth="300px" />
           <Image src={NFT_IMAGES.NFT3} maxWidth="300px" />
@@ -46,13 +46,13 @@ const Home: React.FC = () => {
           <Image src={NFT_IMAGES.NFT5} maxWidth="300px" />
           <Image src={NFT_IMAGES.NFT6} maxWidth="300px" />
         </SimpleGrid>
-        <SimpleGrid columns={{ sm: 1, md: 2 }} height="auto" spacing={{ base: '20', md: '20px' }} pt={{ base: '0', lg: '20' }} pb="40">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} height="auto" spacing={{ base: '20', md: '20px' }} pt="40" pb="40">
           <Center width="450px">
             <VStack spacing="5">
               <Text fontWeight="bold" fontSize="3xl">
                 Saikou Gourmet Club!!
               </Text>
-              <Text fontWeight="bold" fontSize="3xl">
+              <Text fontWeight="bold" fontSize="xl">
                 Fresh CNFT drops
               </Text>
               <Text textAlign="center" width={{ base: '300px', lg: '200px' }}>
@@ -72,7 +72,7 @@ const Home: React.FC = () => {
               <Text fontWeight="bold" fontSize="3xl">
                 Roadmap
               </Text>
-              <Text fontWeight="bold" fontSize="3xl">
+              <Text fontWeight="bold" fontSize="xl">
                 2022 Schedule
               </Text>
               <Text textAlign="center" fontWeight="400" width={{ base: '300px', lg: '300px' }} pb="5">

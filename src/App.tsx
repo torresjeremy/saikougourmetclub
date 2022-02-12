@@ -9,14 +9,12 @@ import Roadmap from 'pages/roadmap';
 import Contact from 'pages/contact';
 import Header from 'components/header';
 import theme from 'components/theme';
-// import Fonts from 'components/fonts';
 import './scss/global.scss';
 import Footer from 'components/footer';
 
 const App: React.FC = () => (
   <div className="App">
     <ChakraProvider theme={theme}>
-      {/* <Fonts /> */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

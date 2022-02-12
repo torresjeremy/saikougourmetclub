@@ -26,13 +26,11 @@ const Contact: React.FC = () => {
 
     emailjs.sendForm('service_c5mav1f', 'template_nb1ikuc', formRef.current, 'user_qmU8FjIYDD2LecWzyelZI')
       .then((result) => {
-        console.log(result.text);
         setSuccessMessageDisplay(true);
         dismissTimeout();
         formRef.current.reset();
         setRecaptchaResp(null);
       }, (error) => {
-        console.error(error.text);
         setSuccessMessageDisplay(true);
         dismissTimeout();
         formRef.current.reset();
@@ -48,7 +46,7 @@ const Contact: React.FC = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
           w="100%"
-          height={{ base: '80vh' }}
+          height={{ base: '800px', md: '80vh' }}
         >
           <Container maxW="100%" textAlign="left" alignContent="flex-start" pl={{ base: '16px', lg: '16%' }} pr={{ base: '16px', lg: '32%' }} pt={{ base: 0, md: '80px' }}>
             <Alert status="success" display={successMessageDisplay ? 'block' : 'none'} variant="subtle">

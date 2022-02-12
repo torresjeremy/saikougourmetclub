@@ -8,65 +8,19 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-// @mixin montserratFont($property) {
-//   font-family: 'Montserrat';
-//   src: url($property);
-//   src: url($property) format('truetype') format('ttf'),
-//     url($property) format('truetype'),
-//     /* Safari, Android, iOS */ url($property) format('svg'); /* Legacy iOS */
-// }
-
-// @mixin proximaNovaFontWoff2($property, $format) {
-//   font-family: 'ProximaNova';
-//   src: url($property);
-//   src: url($property) format($format),
-//     url($property) format('svg') // legacy iOS
-// }
-
-// @font-face {
-//   @include montserratFont('../fonts/Montserrat-Regular.ttf');
-//   font-weight: 400;
-//   font-style: normal;
-// };
-
-// @font-face {
-//   font-family: 'ProximaNova';
-//   src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
-//     url('../fonts/ProximaNova-Regular.woff') format('woff'),
-//     url('../fonts/ProximaNova-Regular.woff') format('svg');
-//   font-weight: 400;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'ProximaNova';
-//   src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
-//     url('../fonts/ProximaNova-Semibold.woff') format('woff'),
-//     url('../fonts/ProximaNova-Semibold.woff') format('svg');
-//   font-weight: 500;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'ProximaNova';
-//   src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
-//     url('../fonts/ProximaNova-Bold.woff') format('woff'),
-//     url('../fonts/ProximaNova-Bold.woff') format('svg');
-//   font-weight: 700;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'ProximaNova';
-//   src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
-//     url('../fonts/ProximaNova-Light.woff') format('woff'),
-//     url('../fonts/ProximaNova-Light.woff') format('svg');
-//   font-weight: 200;
-//   font-style: normal;
-// }
 @font-face {
   font-family: 'CFSamuraiBob';
   src: url('../fonts/CFSamuraiBob-Regular.woff2') format('woff2'),
     url('../fonts/CFSamuraiBob-Regular.woff') format('woff'),
     url('../fonts/CFSamuraiBob-Regular.woff') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GangOfThree';
+  src: url('../fonts/go3v2.ttf') format('truetype'),
+    url('../fonts/go3v2.ttf') format('svg');
   font-weight: 400;
   font-style: normal;
 }
