@@ -10,7 +10,9 @@ import { Link, NavLink } from 'react-router-dom';
 const Header: React.FC = () => (
   <Flex width="100%" height="130px" bg="yellow.150">
     <Center maxHeight="130px" ml={{ base: '12px', md: '40px' }}>
-      <Image src={Logo} objectFit="cover" alt="logo" width={{ base: '100px', md: 'auto' }} />
+      <Link to="/">
+        <Image src={Logo} objectFit="cover" alt="logo" width={{ base: '100px', md: 'auto' }} />
+      </Link>
     </Center>
     <Spacer />
     <Flex
