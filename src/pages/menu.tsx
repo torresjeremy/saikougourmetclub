@@ -1,9 +1,10 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { useEffect } from 'react';
 import {
-  Flex, Center, VStack, Box, Text,
+  Flex, Center, VStack, Box, Button, Link,
 } from '@chakra-ui/react';
 import HeaderContact from 'images/contact/header_contact.png';
+import { GiNoodles } from 'react-icons/gi';
 
 const Contact: React.FC = () => {
   useEffect(() => {
@@ -22,12 +23,13 @@ const Contact: React.FC = () => {
         >
           <Center height="85%">
             <Box
-              fontFamily="CFSamuraiBob"
               fontWeight="400"
               color="red.150"
               fontSize="7xl"
             >
-              Serving Real Soon <Text fontFamily="GangOfThree" display="inline" fontSize={{ base: '5xl' }}>!</Text>
+              <Button fontSize={{ base: '20px', md: '40px' }} leftIcon={<GiNoodles />} width="100%" height="100%" p={{ base: '15px', md: '20px' }} bg="red.150" _hover={{ bg: 'red.150' }} _active={{ bg: 'red.1540' }} color="white">
+                <Link href="https://buynfts.exchange/sales/TheFirstDish" target="_blank">Mint an SGC!!</Link>
+              </Button>
             </Box>
           </Center>
         </Box>

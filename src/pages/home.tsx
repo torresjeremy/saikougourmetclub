@@ -62,7 +62,7 @@ const Home: React.FC = () => {
                 “The First Dish” made
                 fresh from our kitchen.
               </Text>
-              <Button size="md" bg="red.150" _hover={{ bg: 'red.150' }} _active={{ bg: 'red.1540' }} color="white" onClick={() => navigate('/menu')}>
+              <Button size="md" bg="red.150" _hover={{ bg: 'red.150' }} _active={{ bg: 'red.1540' }} color="white" onClick={() => navigate('/mint')}>
                 See More
               </Button>
             </VStack>

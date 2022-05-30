@@ -27,7 +27,7 @@ const Header: React.FC = () => (
     >
       <Center p="5" fontWeight="bold"><NavLink to="/" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Home</NavLink></Center>
       <Center p="5"><NavLink to="/about" className={({ isActive }) => (isActive ? 'activeLink' : '')}>About</NavLink></Center>
-      <Center p="5"><NavLink to="/menu" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Menu</NavLink></Center>
+      <Center p="5"><NavLink to="/mint" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Mint</NavLink></Center>
       <Center p="5"><NavLink to="/roadmap" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Roadmap</NavLink></Center>
       <Center p="5"><NavLink to="/contact" className={({ isActive }) => (isActive ? 'activeLink' : '')}>Contact</NavLink></Center>
       <Center p="5" pr="0">
@@ -70,7 +70,7 @@ const Header: React.FC = () => (
             <Center w="100%"><Link to="/about">About</Link></Center>
           </MenuItem>
           <MenuItem>
-            <Center w="100%"><Link to="/menu">Menu</Link></Center>
+            <Center w="100%"><Link to="/mint">mint</Link></Center>
           </MenuItem>
           <MenuItem>
             <Center w="100%"><Link to="/roadmap">Roadmap</Link></Center>

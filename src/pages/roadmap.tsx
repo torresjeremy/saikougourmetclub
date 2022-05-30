@@ -30,7 +30,7 @@ const Roadmap: React.FC = () => {
           </Center>
         </Box>
         <Container pt="80px" pb="30px" maxW="8xl" px="12%">
-          <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Q2 2022</Heading>
+          <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Phase 1</Heading>
           <Container fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
             <Text pt="10px" pb="10px">Website Launching</Text>
             <Text pt="10px" pb="10px">Social Media Presence</Text>
@@ -41,7 +41,7 @@ const Roadmap: React.FC = () => {
           </Container>
         </Container>
         <Container pt="30px" pb="30px" maxW="8xl" px="12%">
-          <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Q3 2022</Heading>
+          <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Phase 2</Heading>
           <Container fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
             <Text pt="10px">Community Art Competition</Text>
             <Text fontWeight="400" pl="50px" pb="10px">Winner will receive an exclusive NFT and become the banner on Discord. Top 10 will be posted on social media.</Text>
@@ -52,14 +52,14 @@ const Roadmap: React.FC = () => {
           </Container>
         </Container>
         <Container pt="30px" pb="80px" maxW="8xl" px="12%">
-          <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Q4 2022</Heading>
+          <Heading fontSize="55px" fontFamily="CFSamuraiBob" fontWeight="400" color="red.150" textAlign="left">Phase 3</Heading>
           <Container fontWeight="500" color="black" textAlign="left" maxW="90%" pt="20px">
             <Text pt="10px">Launching of “The Second Dish” </Text>
             <Text fontWeight="400" pl="50px" pb="10px">Winner will receive an exclusive NFT and become the banner on Discord. Top 10 will be posted on social media.</Text>
             <Text pt="10px">”The First Dish” in the style of our guest chef. Artist to be determined by the team.</Text>
             <Text fontWeight="400" pl="50px" pb="10px">”The First Dish” in the style of our guest chef. Artist to be determined by the team.</Text>
             <Text pt="10px">“Metaverse Food Street” Announcement</Text>
-            <Text fontWeight="400" pl="50px" pb="10px">A community driven space wehre one can showcase and/or sell their Saikou Gourmet Club!! NFT’s.</Text>
+            <Text fontWeight="400" pl="50px" pb="10px">A community driven space where one can showcase and/or sell their Saikou Gourmet Club!! NFT’s.</Text>
           </Container>
         </Container>
       </VStack>
